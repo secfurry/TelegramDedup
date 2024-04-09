@@ -57,7 +57,7 @@ Optional Arguments:
                             being used. Overrides any "-f/--state" argument.
 
 The app_id and app_hash values can be gerenerated via the Telegram API page at
-https://my.telegram.org.
+https://my.telegram.org
 
 On first run or when no state file is used, you will be asked for Telegram login
 credentials. You may use the credentials of any account that has delete permission
@@ -154,7 +154,7 @@ def _main():
     del s, d, n
 
 
-def _usage():
+def _usage(*_):
     print(USAGE.format(bin=argv[0]))
     exit(2)
 
