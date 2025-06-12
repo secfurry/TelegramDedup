@@ -319,7 +319,7 @@ def _check_duplicates(client, channel, dry, output, args):
                     f" {x:4} - ({v[x].date.strftime("%m/%d/%y %H:%M")}) {v[x].id:6} : {v[x].id}\n"
                 )
         b.write("\n")
-    if output is not None:
+    if output is not None and b.tell() > 0:
         try:
             with open(join(output, "text.log"), "w") as f:
                 f.write(b.getvalue())
