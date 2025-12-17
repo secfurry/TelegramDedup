@@ -27,12 +27,11 @@ from struct import pack
 from imagehash import dhash
 from hashlib import md5, sha256
 from io import BytesIO, StringIO
-from sys import stderr, exit, argv
+from sys import argv, exit, stderr
 from argparse import ArgumentParser
 from telethon.sync import TelegramClient
-from telethon.tl.types import PeerUser, PeerChannel, PeerChat
-from os.path import join, exists, isdir, expanduser, expandvars
-
+from telethon.tl.types import PeerChat, PeerUser, PeerChannel
+from os.path import join, isdir, exists, expanduser, expandvars
 
 USAGE = """Telegram Chat Text/File/Image/Video De-Duplicator
 

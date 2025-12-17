@@ -21,13 +21,12 @@
 # SOFTWARE.
 #
 
-from os import makedirs
 from hashlib import md5
-from sys import stderr, exit, argv
+from os import makedirs
+from sys import argv, exit, stderr
 from argparse import ArgumentParser
 from telethon.sync import TelegramClient
-from os.path import join, exists, isdir, expanduser, expandvars
-
+from os.path import join, isdir, exists, expanduser, expandvars
 
 USAGE = """Telegram Chat Media Downloader
 
